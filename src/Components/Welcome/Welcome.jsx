@@ -1,7 +1,7 @@
 import React from "react";
 import "./Welcome.css";
 
-function Welcome({ username, setUsername }) {
+function Welcome({ setUsername, setStart }) {
   return (
     <div>
       <div className="main-container">
@@ -17,9 +17,16 @@ function Welcome({ username, setUsername }) {
             type="text"
           />
         </div>
-        
+
         <div>
-          <button className="start">Start Exploring</button>
+          <button
+            onClick={() => {
+              setStart(true);
+            }}
+            className="start"
+          >
+            Start Exploring
+          </button>
         </div>
       </div>
     </div>
