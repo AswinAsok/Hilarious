@@ -54,11 +54,13 @@
 
 
 .userinp{
-    border-style: groove;
+    border-style: solid;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-color: #52b788;
     padding: 0.75rem;
-    border-radius: 8px;
+    border-width: 2px;
+    color: white;
+    border-radius: 6px;
     background-color: #081c15;
 }
