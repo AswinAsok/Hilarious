@@ -1,9 +1,10 @@
-import './App.css';
+import "./App.css";
+import Welcome from "./Components/Welcome/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <div>Let Rock it !!</div>
+      <Welcome />
     </div>
   );
 }

@@ -1,0 +1,50 @@
+.main-container {
+  background-color: #081c15;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 30vh;
+  color: #b7e4c7;
+}
+
+.welcome-text {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.tagline {
+  font-size: 1.75rem;
+}
+
+.start {
+  background-color: #52b788;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #081c15;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    min-height: 70vh;
+  }
+  .welcome-text {
+    font-size: 1.7rem;
+  }
+  .start {
+    background-color: #52b788;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #081c15;
+    margin-top: 1rem;
+  }
+  .tagline {
+    font-size: 1.35rem;
+  }
+}
