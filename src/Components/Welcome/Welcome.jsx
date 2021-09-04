@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Welcome.css";
 
 function Welcome({ setUsername, setStart }) {
@@ -19,14 +20,16 @@ function Welcome({ setUsername, setStart }) {
         </div>
 
         <div>
-          <button
-            onClick={() => {
-              setStart(true);
-            }}
-            className="start"
-          >
-            Start Exploring
-          </button>
+          <Link to="/garden">
+            <button
+              onClick={() => {
+                setStart(true);
+              }}
+              className="start"
+            >
+              Start Exploring
+            </button>
+          </Link>
         </div>
       </div>
     </div>
