@@ -15,3 +15,15 @@ export const getProfile = async (username) => {
     return "error";
   }
 };
+
+export const getRepos = async (username) => {
+  const url = "https://api.github.com/users/" + username + "/repos";
+  try {
+    let response = await axios.get(url);
+    console.log(response.data);
+    return response.data;
+  } catch (e) {
+    console.log(e);
+    return "error";
+  }
+};
